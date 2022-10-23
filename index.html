@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+
+    <section id="design" class="design section">
+        <div class="container design__container">
+            <div class="design__description-wrapper">
+                <h2 class="section__title">Premium design and comfort</h2>
+                <h3 class="section__subtitle">11 levels of noise reduction</h3>
+                <p class="section__text  design__text">With the new Bose Noise Canceling Headphone 700, you
+                    can smoothly increase or
+                    decrease the level of
+                    noise cancellation. You can be heard perfectly and you hear the interlocutor clearly, even in a
+                    noisy
+                    environment!</p>
+                <h3 class="section__subtitle">Comfort up to max level</h3>
+                <p class="section__text">Stylish, lightweight stainless steel headband with soft, angled cups
+                    of headphones
+                    for comfortable seating. The inner
+                    side is made of soft gel lining that fits well to the head.</p>
+            </div>
+            <picture>
+                <source srcset="
+                              ./images/design-desktop.jpeg    1x,
+                              ./images/design-desktop@2x.jpeg 2x" media=" (min-width: 1440px)" />
+                <source srcset="
+                              ./images/design-tablet.jpeg    1x,
+                              ./images/design-tablet@2x.jpeg 2x" media="(min-width: 768px)" />
+
+                <source srcset="
+                              ./images/design-mobile.jpeg 1x,
+                              ./images/design-mobile@2x.jpeg 2x" />
+
+                <img class="design__image" src="./images/design-desktop.jpeg"
+                    alt="girl with headphones is listening to music" />
+            </picture>
+
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews section">
+        <div class="container reviews__container">
+            <h2 class="section__title reviews__title">reviews</h2>
+            <div class="reviews__video-container">
+                <iframe class="reviews__video" width="920" height="590" src="https://www.youtube.com/embed/VqP11Ma_2Fk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <h3 class="section__subtitle reviews__subtitle">Bose Сorporation</h3>
+            <p class="section__text reviews__text">
+                Critically acclaimed for their powerful noise cancelling, astonishing sound, and unrivaled voice pickup,
+                Bose Noise
+                Cancelling Headphones 700 help turn any space into the perfect place to listen to music, get work done,
+                or
+                just shut out
+                the world for a few moments and relax.
+            </p>
+            <form class="reviews__slider-holder" name="slider-place" action="#">
+                <label class="reviews__toggle-label">
+                    <input type="radio" class="rievews__slider-toggle" name="slider-toggle" value="first" checked>
+                    <span class="reviews__slider-number">01</span>
+                </label>
+                <label class="reviews__toggle-label ">
+                    <input type="radio" class="rievews__slider-toggle" name="slider-toggle" value="second">
+                    <span class="reviews__slider-number reviews__slider-number--prefixed">02</span>
+                </label>
+                <label class="reviews__toggle-label ">
+                    <input type="radio" class="rievews__slider-toggle" name="slider-toggle" value="third">
+                    <span class="reviews__slider-number reviews__slider-number--prefixed">03</span>
+                </label>
+                <label class="reviews__toggle-label ">
+                    <input type="radio" class="rievews__slider-toggle" name="slider-toggle" value="forth">
+                    <span class="reviews__slider-number reviews__slider-number--prefixed">04</span>
+                </label>
+            </form>
+        </div>
+
+    </section>
+
+    <section id="ability" class="ability section">
+        <div class="container ability__container">
+            <h2 class="section__title">capable of so much</h2>
+            <ul class="ability__list">
+                <li class="section__text ability__text">Ability to receive calls</li>
+                <li class="section__text ability__text">Rich and powerful sound</li>
+                <li class="section__text ability__text">Active noise cancellation option</li>
+                <li class="section__text ability__text">Unsurpassed microphone system</li>
+                <li class="section__text ability__text">Support of voice assistants</li>
+                <li class="section__text ability__text">Bose AR Augmented Reality Audio Platform</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
